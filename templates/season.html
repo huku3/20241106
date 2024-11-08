@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {% if month in [12, 1, 2] %}
+    <p>{{ month }}月は冬ですね</p>
+
+    {% elif month in [3, 4, 5] %}
+    <p>{{ month }}月は春ですね</p>
+
+    {% elif month in [6, 7, 8] %}
+    <p>{{ month }}月は夏ですね</p>
+
+    {% else %}
+    <p>{{ month }}月は秋ですね</p>
+
+    {% endif %}
+
+</body>
+
+</html>
